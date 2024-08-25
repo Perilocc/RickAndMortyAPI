@@ -1,0 +1,17 @@
+# Ignorar o diretório do ambiente virtual
+venv/
+
+# Ignorar arquivos e diretórios gerados pelo Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar o banco de dados SQLite
+db.sqlite3
+
+# Ignorar arquivos de configuração de IDEs e editores
+*.vscode/
+*.idea/
+*.sublime-workspace
+*.sublime-project
