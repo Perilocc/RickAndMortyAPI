@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+# Create your models here
 
 class  RickAndMorty(models.Model):
     
@@ -38,7 +38,6 @@ class  RickAndMorty(models.Model):
         max_length=100,
         blank=True,   
     )
-    
     class Meta:
         verbose_name = "Personagem"
         verbose_name_plural = "Personagens"

@@ -5,4 +5,4 @@ class RickAndMortySerializer(serializers.ModelSerializer):
     
     class Meta:
         model = RickAndMorty
-        fields = ['id', 'nome', 'genero', 'status', 'origem', 'localizacao']
+        fields = ['id', 'nome', 'genero', 'status', 'especie', 'origem', 'localizacao']

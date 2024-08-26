@@ -1,9 +1,9 @@
-from urllib.parse import quote
 from rest_framework.viewsets import ModelViewSet
 from .serializers import RickAndMortySerializer, RickAndMorty
 import requests
 from rest_framework.response import Response
 from django_filters.rest_framework import DjangoFilterBackend
+from urllib.parse import quote
 
 class RickAndMortyViewSet(ModelViewSet):
     
@@ -47,6 +47,7 @@ class RickAndMortyViewSet(ModelViewSet):
             "origem": origin,
             "localizacao": localizacao
         }
+        
         print(personagem)
         meuserializador = RickAndMortySerializer(data=personagem)
         
