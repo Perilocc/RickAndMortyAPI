@@ -1,0 +1,34 @@
+Roteiro:
+- Criar a estrutura básica de um projeto
+- Consumir a Rick And Morty API
+- Mostrar o Insomnia ou Postman
+- Testar requests no INSOMNIA e na API
+- Falar acerca de from/import
+- Focar nas views.
+- Mostrar os filtros
+
+- Fazer Perguntas aos imersionistas
+- Passar um exercício para eles Fazerem
+- Conectar ao PostgreSQL
+
+
+links: https://rickandmortyapi.com/
+json: https://rickandmortyapi.com/api/character/?name=rick
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'RickAPI', 
+        'USER': 'postgres',
+        'PASSWORD': 'root',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+
+dependências: 
+django rest
+pillow
+psycopg2-binary
+requests
+django-filter      
