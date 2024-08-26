@@ -2,6 +2,9 @@ from django.db import models
 from app1.models import *
 # Create your models here.
 
+def image(instance, filename):
+    return f"images/{instance.nome}/{filename}"
+
 class TesteCampos(models.Model):
     
     class Status(models.TextChoices):
@@ -54,7 +57,12 @@ class TesteCampos(models.Model):
         choices = Status.choices,
         default = Status.PENDENTE
     )
-    
+
+    imagem = models.ImageField(
+        "Imagem do Personagem",
+        upload_to=image,
+        default="images\generic_profile.png"
+    )
     class Meta:
         verbose_name = "Teste"
         verbose_name_plural = "Teste Campos"
